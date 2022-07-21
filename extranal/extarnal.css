@@ -31,10 +31,8 @@ main{display: flex;
 /* header style line  */
 
 
-
-
 /* aside bar and plyers style  */
-.asideandplyer{width: 94%;
+.asideandplyer{width:100%;
                display: flex;
                flex-direction:row;
                column-gap: 10px;
@@ -59,45 +57,32 @@ main{display: flex;
                font-weight: 700;
                padding: 10px;
                border-radius: 10px;}
-  
-.players{width: 80%;
-         display: grid;
-         grid-template-columns:repeat(3,1fr);
-         grid-template-rows:repeat(3, 1fr);
-         row-gap: 20px;
-         column-gap: 20px;}
 
-  /****Only Player box Style line ********************/
-.player{display: flex;
-        width: fit-content;
-       flex-direction: column;
-       background-color: aliceblue;
-       border-radius: 5px;}
-.player .img{width: 100%;
-             display: grid;
-             flex-direction:row;}            
-.player button{background-color:white;
-               border: 1px solid black;
-               font-size: 1px;
-               border-radius: 4px;
-               width: 70px;
-               height:22px;
-               font-size: 12px;
-               margin-top: 5px;}               
-.player p{font-size: 10px;
-          font-weight: 600;
-          color: rgba(0, 0, 0, 0.589);}
-.player .iconplyericon{font-size:11px;
-                       display: flex;
-                       flex-direction: row;
-                       justify-content:space-around;}          
+
+/**********box box main box*****************************/
+.mainbox{width:400px;
+         display:grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: repeat(2,1fr);
+          row-gap: 10px;
+          column-gap: 10px; 
+        } 
+.box{border: solid 1px black;
+     border-radius: 5px;}
+.img{
+     display:flex;}
+.text{font-size: 15px;}
+
+
+.text{height: 50%;}
+  /****Only box Style line ********************/
 
 
 
 
 
          /* Footer style line */
-footer{margin-top: 40px; ;
+footer{margin-top: 40px; 
       background-color:black;
        height: 200px;
        color: white;
